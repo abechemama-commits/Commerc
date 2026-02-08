@@ -1,72 +1,90 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial;
+
+    color: #333;
 }
 
-.hero{
-  background:url("image.jpg") center/cover no-repeat;
-  height:100vh;
+/* تنسيقات الرأس (Header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-.overlay{
-  background:rgba(0,0,0,0.6);
-  height:100%;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+header h1 {
+    margin: 0;
 }
 
-.main-btn{
-  background:#25D366;
-  color:white;
-  padding:15px 30px;
-  border-radius:30px;
-  text-decoration:none;
-  margin-top:20px;
-  font-size:18px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.products{
-  padding:40px;
-  background:#f4f4f4;
-  text-align:center;
+nav ul li {
+    margin: 0 15px;
 }
 
-.products h2{
-  margin-bottom:30px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.product-box{
-  background:white;
-  padding:20px;
-  margin:15px auto;
-  max-width:400px;
-  border-radius:12px;
+/* تنسيقات القسم الرئيسي (Main) */
+main {
+    padding: 20px;
 }
 
-.product-box span{
-  display:block;
-  margin:10px 0;
-  font-weight:bold;
+/* تنسيقات قسم البطل (Hero Section) */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e2e2e2;
+    margin-bottom: 30px;
 }
 
-.order{
-  display:inline-block;
-  background:black;
-  color:white;
-  padding:10px 20px;
-  border-radius:20px;
-  text-decoration:none;
+#hero h2 {
+    color: #007bff;
 }
 
-footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:15px;
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
 }
+
+/* تنسيقات قسم الخدمات */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* تنسيقات التذييل (Footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ 
